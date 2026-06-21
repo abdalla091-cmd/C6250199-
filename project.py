@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+  body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 20px;
+  }
+
+  .outer {
+    border: 4px solid green;
+    padding: 6px;
+    max-width: 800px;
+  }
+
+  .header {
+    border: 3px solid yellow;
+    background-color: lightblue;
+    text-align: center;
+    padding: 25px 0;
+  }
+
+  .header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+
+  .content {
+    display: flex;
+    border: 3px solid darkgreen;
+    margin-top: 4px;
+  }
+
+  .nav {
+    border-right: 2px solid blue;
+    padding: 10px;
+    width: 90px;
+  }
+
+  .nav a {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .main {
+    border-right: 2px solid blue;
+    display: flex;
+    padding: 10px;
+    flex: 2;
+  }
+
+  .flag {
+    width: 180px;
+    height: 120px;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  table {
+    border-collapse: collapse;
+    flex: 2;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  th {
+    text-align: center;
+  }
+
+  .footer {
+    border: 2px solid orange;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 4px;
+  }
+</style>
+</head>
+<body>
+
+<div class="outer">
+
+  <div class="header">
+    <h1>Example two layout</h1>
+  </div>
+
+  <div class="content">
+
+    <div class="nav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+    </div>
+
+    <div class="main">
+      <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Somalia.svg" alt="Somalia Flag">
+      <div class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit blanditiis sequi ipsa ad amet. Est eligendi libero cupiditate voluptatem numquam laboriosam praesentium nihil, quis voluptas dolorem earum, amet tempora.
+      </div>
+    </div>
+
+    <table>
+      <tr>
+        <th>ST ID</th>
+        <th>ST Tel</th>
+        <th>ST Name</th>
+      </tr>
+      <tr>
+        <td>001</td>
+        <td>612111111</td>
+        <td>ABDIRAHAMN MUKHTAR AHMED</td>
+      </tr>
+      <tr>
+        <td>002</td>
+        <td>611222222</td>
+        <td>ALIA AHMED WARSAME</td>
+      </tr>
+      <tr>
+        <td>003</td>
+        <td>626222222</td>
+        <td>SHUCAYB ALI MOHAMUUD</td>
+      </tr>
+      <tr>
+        <td>004</td>
+        <td>689000000</td>
+        <td>CALI SUGULE CABDULLE</td>
+      </tr>
+    </table>
+
+  </div>
+
+  <div class="footer">
+    &copy; CNS253
+  </div>
+
+</div>
+
+</body>
+</html>
